@@ -1,0 +1,14 @@
+body {
+  background: #fff url("/img/Arctic-Sea-Mountain-Landscape-hd-Wallpaper.jpg");
+  color: #222f3e;
+  font-family: "Exo 2", Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #fff;
+  transition: color .5s; }
+  a:hover {
+    color: #222f3e; }

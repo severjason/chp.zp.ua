@@ -1,0 +1,156 @@
+// sass-lint:disable force-element-nesting
+// sass-lint:disable no-important
+@import '../../scss/variables';
+
+.chp-header-wrapper {
+  min-height: $chp-container-min-height;
+
+  .chp-header {
+    margin: 0;
+  }
+
+  .chp-header-text {
+    background-color: $chp-main-dark-color;
+    height: 2 * $chp-container-min-height / 3;
+
+    &::before {
+      background-color: $chp-main-dark-color;
+      bottom: 0;
+      content: '';
+      height: 2 * $chp-container-min-height / 3;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      z-index: -1;
+    }
+
+    .chp-icon {
+      color: $chp-main-light-color;
+      font-size: 5rem;
+      height: 5rem;
+      padding-top: 2rem;
+    }
+
+    .chp-text {
+      color: $chp-main-light-color;
+      font-size: 2rem;
+
+      h3 {
+        color: $chp-white-color;
+        font-family: $chp-font-family;
+        font-size: 3rem;
+      }
+
+      a {
+        color: $chp-main-light-color;
+        transition: color .5s;
+
+        &:hover {
+          color: $chp-white-color;
+        }
+      }
+    }
+  }
+
+  .chp-header-phone {
+    background-color: $chp-main-light-color;
+    height: $chp-container-min-height / 3;
+
+    &::before {
+      background-color: $chp-main-light-color;
+      bottom: 0;
+      content: '';
+      height: $chp-container-min-height / 3;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      z-index: -1;
+    }
+
+    .chp-icon {
+      color: $chp-white-color;
+      font-size: 3.5rem;
+      height: 3.5rem;
+      padding-top: 3rem;
+    }
+
+    .chp-text {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+
+    .chp-phone {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+
+  .chp-header-wrapper {
+    min-height: auto;
+
+    .chp-header-text {
+      height: $chp-container-min-height / 3;
+
+      &::before {
+        // width: 0;
+      }
+    }
+
+    .chp-header-phone {
+
+      &::before {
+        // width: 0;
+      }
+    }
+
+  }
+
+}
+
+
+@media all and (max-width: 600px) {
+
+  .chp-header-wrapper {
+
+    .ui.container {
+      margin: 0 !important;
+    }
+
+    .chp-header-text {
+
+      .chp-icon {
+        font-size: 4rem;
+        height: 4rem;
+        padding-top: 2rem;
+      }
+
+      .chp-text {
+        font-size: 1.5rem;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .chp-header-phone {
+
+      .chp-icon {
+        font-size: 3rem;
+        height: 3rem;
+        padding-top: 2.5rem;
+      }
+
+      .chp-phone {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+
+}

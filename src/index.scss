@@ -1,0 +1,20 @@
+@import 'scss/variables';
+
+body {
+  background: $chp-white-color url('/img/Arctic-Sea-Mountain-Landscape-hd-Wallpaper.jpg');
+  color: $chp-main-dark-color;
+  font-family: $chp-font-family;
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $chp-white-color;
+  transition: color .5s;
+
+  &:hover {
+    color: $chp-main-dark-color;
+  }
+}
