@@ -3,10 +3,11 @@
 @import '../../scss/variables';
 
 .chp-header-wrapper {
-  min-height: $chp-container-min-height;
+  // min-height: $chp-container-min-height;
 
   .chp-header {
     margin: 0;
+    min-height: $chp-container-min-height;
   }
 
   .chp-header-text {
@@ -36,7 +37,7 @@
       color: $chp-main-light-color;
       font-size: 2rem;
 
-      h3 {
+      h1 {
         color: $chp-white-color;
         font-family: $chp-font-family;
         font-size: 3rem;
@@ -91,7 +92,11 @@
 @media all and (max-width: 992px) {
 
   .chp-header-wrapper {
-    min-height: auto;
+    // min-height: auto;
+
+    .chp-header {
+      min-height: auto;
+    }
 
     .chp-header-text {
       height: $chp-container-min-height / 3;

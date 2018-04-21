@@ -1,2 +1,17 @@
-.chp-image-divider-container {
-  height: 30rem; }
+.chp-image-divider-container .ui.grid.chp-image-divider {
+  margin: 0;
+  min-height: 40rem; }
+  .chp-image-divider-container .ui.grid.chp-image-divider .column {
+    padding: 0; }
+  .chp-image-divider-container .ui.grid.chp-image-divider img {
+    box-shadow: -0.2rem 2rem 8rem 2rem rgba(0, 0, 0, 0.4);
+    height: 40rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    width: 40rem; }
+  .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text {
+    padding-left: 7.5rem;
+    text-align: left; }
+    .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h3 {
+      font-size: 4rem;
+      margin-top: 2.5rem; }

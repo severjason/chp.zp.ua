@@ -1,5 +1,34 @@
+// sass-lint:disable force-element-nesting
 @import '../../scss/variables';
 
 .chp-image-divider-container {
-  height: $chp-container-min-height;
+  // min-height: $chp-container-min-height;
+
+  .ui.grid.chp-image-divider {
+    margin: 0;
+    min-height: $chp-img-height;
+
+    .column {
+      padding: 0;
+    }
+
+    img {
+      box-shadow: $chp-image-box-shadow;
+      height: $chp-img-height;
+      margin-top: $chp-image-margin / 2;
+      position: absolute;
+      width: $chp-img-width;
+    }
+
+    .chp-image-text {
+      padding-left: 3 * $chp-image-margin / 2;
+      text-align: left;
+
+      h3 {
+        font-size: 4rem;
+        margin-top: $chp-image-margin / 2;
+      }
+    }
+
+  }
 }

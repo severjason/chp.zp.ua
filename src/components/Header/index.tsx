@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ImageDivider } from '../../components';
 import './index.css';
 
 const Header: React.StatelessComponent = () => {
@@ -6,21 +7,20 @@ const Header: React.StatelessComponent = () => {
         <div className="chp-header-wrapper">
             <div className="ui container">
                 <div className="ui grid chp-header">
-                    <div className="sixteen wide mobile eight wide computer column chp-header-element">
+                    <div className="sixteen wide mobile seven wide computer column chp-header-element">
                         <div className="ui middle aligned centered grid chp-header-text">
                             <div className="row">
                                 <div className="right aligned four wide computer column">
                                     <i className="chp-icon snowflake outline icon"/>
                                 </div>
                                 <div className="chp-text twelve wide computer column">
-                                    <h3>ЧП Северинов</h3>
+                                    <h1>ЧП Северинов</h1>
                                     <a href="http://chp.zp.ua/">chp.zp.ua</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div className="sixteen wide mobile eight wide computer column chp-header-element">
+                    <div className="sixteen wide mobile nine wide computer column chp-header-element">
                         <div className="ui middle aligned grid chp-header-phone">
                             <div className="row">
                                 <div className="right aligned five wide column">
@@ -36,6 +36,7 @@ const Header: React.StatelessComponent = () => {
                     </div>
                 </div>
             </div>
+            <ImageDivider/>
         </div>
     );
 };

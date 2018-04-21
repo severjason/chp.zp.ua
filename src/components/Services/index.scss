@@ -1,5 +1,11 @@
 @import '../../scss/variables';
 
-.chp-services-container {
-  height: $chp-container-min-height;
+.chp-services-wrapper {
+  background: $chp-white-color;
+  padding-top: $chp-image-margin;
+
+  .chp-services-container {
+    min-height: $chp-container-min-height;
+  }
 }
+

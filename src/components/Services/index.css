@@ -1,2 +1,5 @@
-.chp-services-container {
-  height: 30rem; }
+.chp-services-wrapper {
+  background: #fff;
+  padding-top: 5rem; }
+  .chp-services-wrapper .chp-services-container {
+    min-height: 30rem; }

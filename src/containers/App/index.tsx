@@ -8,7 +8,6 @@ class App extends React.Component {
         return (
             <div className="app-wrapper">
                 <Header/>
-                <ImageDivider/>
                 <Services/>
                 <ImageDivider/>
                 <Services/>

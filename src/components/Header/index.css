@@ -1,67 +1,68 @@
-.chp-header-wrapper {
+.chp-header-wrapper .chp-header {
+  margin: 0;
   min-height: 30rem; }
-  .chp-header-wrapper .chp-header {
-    margin: 0; }
-  .chp-header-wrapper .chp-header-text {
+
+.chp-header-wrapper .chp-header-text {
+  background-color: #222f3e;
+  height: 20rem; }
+  .chp-header-wrapper .chp-header-text::before {
     background-color: #222f3e;
-    height: 20rem; }
-    .chp-header-wrapper .chp-header-text::before {
-      background-color: #222f3e;
-      bottom: 0;
-      content: '';
-      height: 20rem;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100vw;
-      z-index: -1; }
-    .chp-header-wrapper .chp-header-text .chp-icon {
-      color: #0abde3;
-      font-size: 5rem;
-      height: 5rem;
-      padding-top: 2rem; }
-    .chp-header-wrapper .chp-header-text .chp-text {
-      color: #0abde3;
-      font-size: 2rem; }
-      .chp-header-wrapper .chp-header-text .chp-text h3 {
-        color: #fff;
-        font-family: "Exo 2", Helvetica, sans-serif;
-        font-size: 3rem; }
-      .chp-header-wrapper .chp-header-text .chp-text a {
-        color: #0abde3;
-        transition: color .5s; }
-        .chp-header-wrapper .chp-header-text .chp-text a:hover {
-          color: #fff; }
-  .chp-header-wrapper .chp-header-phone {
-    background-color: #0abde3;
-    height: 10rem; }
-    .chp-header-wrapper .chp-header-phone::before {
-      background-color: #0abde3;
-      bottom: 0;
-      content: '';
-      height: 10rem;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100vw;
-      z-index: -1; }
-    .chp-header-wrapper .chp-header-phone .chp-icon {
+    bottom: 0;
+    content: '';
+    height: 20rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1; }
+  .chp-header-wrapper .chp-header-text .chp-icon {
+    color: #0abde3;
+    font-size: 5rem;
+    height: 5rem;
+    padding-top: 2rem; }
+  .chp-header-wrapper .chp-header-text .chp-text {
+    color: #0abde3;
+    font-size: 2rem; }
+    .chp-header-wrapper .chp-header-text .chp-text h1 {
       color: #fff;
-      font-size: 3.5rem;
-      height: 3.5rem;
-      padding-top: 3rem; }
-    .chp-header-wrapper .chp-header-phone .chp-text {
-      font-size: 1.2rem;
-      padding-bottom: 1rem; }
-    .chp-header-wrapper .chp-header-phone .chp-phone {
-      display: block;
-      font-size: 2rem; }
+      font-family: "Exo 2", Helvetica, sans-serif;
+      font-size: 3rem; }
+    .chp-header-wrapper .chp-header-text .chp-text a {
+      color: #0abde3;
+      transition: color .5s; }
+      .chp-header-wrapper .chp-header-text .chp-text a:hover {
+        color: #fff; }
+
+.chp-header-wrapper .chp-header-phone {
+  background-color: #0abde3;
+  height: 10rem; }
+  .chp-header-wrapper .chp-header-phone::before {
+    background-color: #0abde3;
+    bottom: 0;
+    content: '';
+    height: 10rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1; }
+  .chp-header-wrapper .chp-header-phone .chp-icon {
+    color: #fff;
+    font-size: 3.5rem;
+    height: 3.5rem;
+    padding-top: 3rem; }
+  .chp-header-wrapper .chp-header-phone .chp-text {
+    font-size: 1.2rem;
+    padding-bottom: 1rem; }
+  .chp-header-wrapper .chp-header-phone .chp-phone {
+    display: block;
+    font-size: 2rem; }
 
 @media all and (max-width: 992px) {
-  .chp-header-wrapper {
+  .chp-header-wrapper .chp-header {
     min-height: auto; }
-    .chp-header-wrapper .chp-header-text {
-      height: 10rem; } }
+  .chp-header-wrapper .chp-header-text {
+    height: 10rem; } }
 
 @media all and (max-width: 600px) {
   .chp-header-wrapper .ui.container {
