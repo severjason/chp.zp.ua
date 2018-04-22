@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { ImageDivider } from '../../components';
+import { ChpState } from '../../interfaces';
 import './index.css';
 
-const Header: React.StatelessComponent = () => {
+const Header: React.StatelessComponent<any> = (props: ChpState) => {
     return (
         <div className="chp-header-wrapper">
             <div className="ui container">
@@ -36,7 +37,7 @@ const Header: React.StatelessComponent = () => {
                     </div>
                 </div>
             </div>
-            <ImageDivider/>
+            <ImageDivider {...props.images[0]}/>
         </div>
     );
 };
