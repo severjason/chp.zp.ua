@@ -12,3 +12,6 @@ a {
   transition: color .5s; }
   a:hover {
     color: #222f3e; }
+
+img {
+  max-width: 100%; }
