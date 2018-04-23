@@ -1,4 +1,5 @@
 // sass-lint:disable force-element-nesting
+// sass-lint:3 nesting-depth
 @import '../../scss/variables';
 
 .chp-image-divider-container {
@@ -14,14 +15,16 @@
 
     img {
       box-shadow: $chp-image-box-shadow;
-      height: $chp-img-height;
-      margin-top: $chp-image-margin / 2;
-      position: absolute;
-      width: $chp-img-width;
+      display: block;
+      height: auto;
+      margin: $chp-image-margin / 2 auto;
+      position: relative;
+      width: 80%;
     }
 
     .chp-image-text {
-      padding-left: 3 * $chp-image-margin / 2;
+      color: $chp-white-color;
+      // padding-left: 3 * $chp-image-margin / 2;
       text-align: left;
 
       h3 {
@@ -30,5 +33,52 @@
       }
     }
 
+  }
+}
+
+@media all and (min-width: 1800px) {
+  .chp-image-divider-container {
+
+    .ui.grid.chp-image-divider {
+
+      .chp-image-text {
+        padding-left: 3 * $chp-image-margin / 2;
+      }
+
+      img {
+        height: $chp-img-height;
+        margin-top: $chp-image-margin / 2;
+        position: absolute;
+        width: $chp-img-width;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 992px) {
+
+  .ui.grid.chp-image-divider {
+    &.right {
+      flex-direction: column-reverse;
+    }
+
+    .chp-image-text {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  .chp-image-divider-container {
+
+    .ui.grid.chp-image-divider {
+
+      .chp-image-text h3 {
+        font-size: 2.5rem;
+      }
+    }
   }
 }

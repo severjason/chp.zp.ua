@@ -5,13 +5,33 @@
     padding: 0; }
   .chp-image-divider-container .ui.grid.chp-image-divider img {
     box-shadow: -0.2rem 2rem 8rem 2rem rgba(0, 0, 0, 0.4);
-    height: 40rem;
-    margin-top: 2.5rem;
-    position: absolute;
-    width: 40rem; }
+    display: block;
+    height: auto;
+    margin: 2.5rem auto;
+    position: relative;
+    width: 80%; }
   .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text {
-    padding-left: 7.5rem;
+    color: #fff;
     text-align: left; }
     .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h3 {
       font-size: 4rem;
       margin-top: 2.5rem; }
+
+@media all and (min-width: 1800px) {
+  .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text {
+    padding-left: 7.5rem; }
+  .chp-image-divider-container .ui.grid.chp-image-divider img {
+    height: 40rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    width: 40rem; } }
+
+@media all and (max-width: 992px) {
+  .ui.grid.chp-image-divider.right {
+    flex-direction: column-reverse; }
+  .ui.grid.chp-image-divider .chp-image-text h3 {
+    text-align: center; } }
+
+@media all and (max-width: 600px) {
+  .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h3 {
+    font-size: 2.5rem; } }

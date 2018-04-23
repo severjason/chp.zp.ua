@@ -6,9 +6,7 @@ import './index.css';
 const ImageDivider: React.StatelessComponent<ChpImage> = (props: ChpImage) => {
     console.log(props);
     const image: ReactNode = (
-        <div >
             <img src={props.src} />
-        </div>
     );
     const text: ReactNode = (
         <div className="chp-image-text">
@@ -19,7 +17,7 @@ const ImageDivider: React.StatelessComponent<ChpImage> = (props: ChpImage) => {
     );
     return (
         <div className="ui container chp-image-divider-container">
-            <div className="ui top aligned centered grid chp-image-divider">
+            <div className={`ui top aligned two column centered grid chp-image-divider ${props.right ? 'right' : ''}`}>
                 <div className="sixteen wide mobile eight wide computer column ">
                     {props.right ? image : text}
                 </div>
