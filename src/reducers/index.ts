@@ -1,11 +1,11 @@
-import * as testImg from '../img/home-02-850x669.jpg';
+import * as airConditioningImg from '../img/img2.jpg';
 import { ChpState } from '../interfaces';
 
 const INITIAL_STATE: ChpState = {
     images: [
         {
             right: true,
-            src: testImg,
+            src: airConditioningImg,
             text: `
             Beat the Heat During the Extremely
             Hot Summer!
@@ -13,7 +13,7 @@ const INITIAL_STATE: ChpState = {
         },
         {
             right: false,
-            src: testImg,
+            src: airConditioningImg,
             text: `
             Beat the Heat During the Extremely
             Hot Summer2!
