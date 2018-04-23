@@ -11,10 +11,10 @@ const Header: React.StatelessComponent<any> = (props: ChpState) => {
                     <div className="sixteen wide mobile seven wide computer column chp-header-element">
                         <div className="ui middle aligned centered grid chp-header-text">
                             <div className="row">
-                                <div className="right aligned four wide computer column">
+                                <div className="right aligned four wide column">
                                     <i className="chp-icon snowflake outline icon"/>
                                 </div>
-                                <div className="chp-text twelve wide computer column">
+                                <div className="chp-text twelve wide column">
                                     <h1>ЧП Северинов</h1>
                                     <a href="http://chp.zp.ua/">chp.zp.ua</a>
                                 </div>
@@ -24,10 +24,10 @@ const Header: React.StatelessComponent<any> = (props: ChpState) => {
                     <div className="sixteen wide mobile nine wide computer column chp-header-element">
                         <div className="ui middle aligned grid chp-header-phone">
                             <div className="row">
-                                <div className="right aligned five wide column">
+                                <div className="right aligned four wide column">
                                     <i className="chp-icon phone icon"/>
                                 </div>
-                                <div className="eleven wide column">
+                                <div className="twelve wide column">
                                     <div className="chp-text">Позвоните нам:</div>
                                     <a href="tel:+380504864980" className="chp-phone">+38 (050) 486-49-80</a><br/>
                                     <a href="tel:+380637862478" className="chp-phone">+38 (063) 786-24-78</a>

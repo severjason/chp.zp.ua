@@ -3,7 +3,8 @@
 @import '../../scss/variables';
 
 .chp-header-wrapper {
-  // min-height: $chp-container-min-height;
+  background: fixed $chp-default-bg-color url('../../img/bg1.jpg') top no-repeat;
+  background-size: cover;
 
   .chp-header {
     margin: 0;
@@ -23,7 +24,6 @@
       right: 0;
       top: 0;
       width: 100vw;
-      z-index: -1;
     }
 
     .chp-icon {
@@ -67,7 +67,6 @@
       position: absolute;
       top: 0;
       width: 100vw;
-      z-index: -1;
     }
 
     .chp-icon {
@@ -102,14 +101,14 @@
       height: $chp-container-min-height / 3;
 
       &::before {
-        // width: 0;
+        width: 0;
       }
     }
 
     .chp-header-phone {
 
       &::before {
-        // width: 0;
+        width: 0;
       }
     }
 
@@ -117,13 +116,16 @@
 
 }
 
-
 @media all and (max-width: 600px) {
 
   .chp-header-wrapper {
 
     .ui.container {
       margin: 0 !important;
+
+      .row > .four.column {
+        text-align: center;
+      }
     }
 
     .chp-header-text {
@@ -137,13 +139,17 @@
       .chp-text {
         font-size: 1.5rem;
 
+        h1 {
+          font-size: 2.5rem;
+        }
+
         h3 {
           font-size: 2.5rem;
         }
       }
     }
 
-    .chp-header-phone {
+    .ui.chp-header-phone {
 
       .chp-icon {
         font-size: 3rem;
