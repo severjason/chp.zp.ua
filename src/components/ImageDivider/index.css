@@ -1,3 +1,11 @@
+.chp-image-divider-wrapper.chp-image-mountain {
+  background: fixed #bdc3c7 url("../../img/bg2.jpg") top no-repeat;
+  background-size: cover; }
+
+.chp-image-divider-wrapper.chp-image-maintenance {
+  background: fixed #bdc3c7 url("../../img/bg3.jpg") top no-repeat;
+  background-size: cover; }
+
 .chp-image-divider-container .ui.grid.chp-image-divider {
   margin: 0;
   min-height: 40rem; }
@@ -12,26 +20,40 @@
     width: 80%; }
   .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text {
     color: #fff;
-    text-align: left; }
-    .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h3 {
+    text-align: left;
+    word-break: break-word; }
+    .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h4 {
       font-size: 4rem;
       margin-top: 2.5rem; }
 
 @media all and (min-width: 1800px) {
   .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text {
-    padding-left: 7.5rem; }
+    padding-right: 7.5rem; }
+    .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text::before {
+      border-top: 3px solid #0abde3;
+      bottom: -5%;
+      content: '';
+      left: 80%;
+      position: absolute;
+      transform: translateY(-50%);
+      width: 70%;
+      z-index: 100; }
   .chp-image-divider-container .ui.grid.chp-image-divider img {
     height: 40rem;
     margin-top: 2.5rem;
     position: absolute;
-    width: 40rem; } }
+    width: 40rem; }
+  .chp-image-divider-container .ui.grid.chp-image-divider.right .chp-image-text {
+    padding-left: 7.5rem; }
+    .chp-image-divider-container .ui.grid.chp-image-divider.right .chp-image-text::before {
+      left: -50%; } }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
   .ui.grid.chp-image-divider.right {
     flex-direction: column-reverse; }
-  .ui.grid.chp-image-divider .chp-image-text h3 {
+  .ui.grid.chp-image-divider .chp-image-text h4 {
     text-align: center; } }
 
 @media all and (max-width: 600px) {
-  .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h3 {
+  .chp-image-divider-container .ui.grid.chp-image-divider .chp-image-text h4 {
     font-size: 2.5rem; } }
