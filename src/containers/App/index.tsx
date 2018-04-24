@@ -5,15 +5,16 @@ import {  Footer, Header, ImageDivider, Partners, Services } from '../../compone
 import { ChpState } from '../../interfaces';
 import './index.css';
 
-class App extends React.Component<any> {
+class App extends React.Component<ChpState> {
     public render() {
         return (
             <div className="app-wrapper">
                 <Header {...this.props}/>
-                <Services/>
+                <Services {...this.props.services}/>
                 <ImageDivider {...this.props.images[1]}/>
-                <Services/>
-                <Partners/>
+                <Services {...this.props.goods}/>
+                <ImageDivider {...this.props.images[2]}/>
+                <Partners partners={this.props.partners}/>
                 <Footer/>
             </div>
         );
