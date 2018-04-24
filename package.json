@@ -2,10 +2,10 @@
   "name": "chp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "http://chp.jswebdev.net/",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/severjason/chp.zp.ua"
   },
   "dependencies": {
     "node-sass-chokidar": "^1.2.2",
