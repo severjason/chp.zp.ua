@@ -1,0 +1,7 @@
+// sass-lint:disable force-element-nesting
+@import '../../scss/variables';
+
+.chp-footer-wrapper {
+  background-color: $chp-main-dark-color;
+  height: $chp-container-min-height;
+}

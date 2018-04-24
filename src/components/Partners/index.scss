@@ -1,0 +1,43 @@
+// sass-lint:disable force-element-nesting
+@import '../../scss/variables';
+
+.chp-partners-wrapper {
+  background: $chp-white-color;
+  padding: $chp-image-margin 0;
+
+  .ui.container.chp-partners-container {
+    .column img {
+      max-width: 21.4rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .chp-partners-wrapper {
+    .ui.container.chp-partners-container {
+      .column {
+        width: 100%;
+      }
+
+      .column img {
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 400px) {
+
+  .chp-partners-wrapper {
+    .ui.container.chp-partners-container {
+      .column img {
+        max-width: 100%;
+      }
+    }
+  }
+
+}

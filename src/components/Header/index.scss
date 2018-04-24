@@ -6,6 +6,12 @@
   background: fixed $chp-default-bg-color url('../../img/bg1.jpg') top no-repeat;
   background-size: cover;
 
+  .ui.grid {
+    .chp-header-element {
+      padding: 0;
+    }
+  }
+
   .chp-header {
     margin: 0;
     min-height: $chp-container-min-height;
@@ -88,10 +94,14 @@
   }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
 
   .chp-header-wrapper {
-    // min-height: auto;
+
+    .ui.container.chp-full-width {
+      margin: 0 !important;
+      width: 100% !important;
+    }
 
     .chp-header {
       min-height: auto;
@@ -161,7 +171,5 @@
         font-size: 1.5rem;
       }
     }
-
   }
-
 }

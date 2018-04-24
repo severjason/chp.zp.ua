@@ -1,11 +1,42 @@
+// sass-lint:disable force-element-nesting
 @import '../../scss/variables';
 
 .chp-services-wrapper {
   background: $chp-white-color;
-  padding-top: $chp-image-margin;
+  padding: $chp-image-margin 0;
 
   .chp-services-container {
     min-height: $chp-container-min-height;
+
+    h3 {
+      color: $chp-main-dark-color;
+      font-size: 4rem;
+      padding-top: $chp-image-margin / 2;
+      text-align: center;
+    }
+
+    .numeration {
+      color: $chp-main-light-color;
+      font-size: 2.5rem;
+    }
+
+    .chp-service-text {
+      color: $chp-main-dark-color;
+      font-size: 2rem;
+      line-height: 2.2rem;
+      word-break: break-word;
+    }
   }
 }
 
+@media all and (max-width: 600px) {
+
+  .chp-services-wrapper {
+
+    .ui.container.chp-services-container {
+      .column {
+        width: 100%;
+      }
+    }
+  }
+}
