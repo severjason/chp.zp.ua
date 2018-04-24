@@ -3,8 +3,10 @@ import './index.css';
 
 const Footer: React.StatelessComponent = () => {
     return (
-        <div className="ui container">
-            Footer
+        <div className="chp-footer-wrapper">
+            <div className="ui container">
+                Footer
+            </div>
         </div>
     );
 };

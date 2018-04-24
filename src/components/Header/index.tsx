@@ -6,7 +6,7 @@ import './index.css';
 const Header: React.StatelessComponent<any> = (props: ChpState) => {
     return (
         <div className="chp-header-wrapper">
-            <div className="ui container">
+            <div className="ui container chp-full-width">
                 <div className="ui grid chp-header">
                     <div className="sixteen wide mobile seven wide computer column chp-header-element">
                         <div className="ui middle aligned centered grid chp-header-text">
