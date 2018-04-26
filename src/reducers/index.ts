@@ -1,4 +1,6 @@
-import * as airConditioningImg from '../img/img2.jpg';
+import * as img1 from '../img/img1.jpg';
+import * as img2 from '../img/img2.jpg';
+import * as img3 from '../img/img3.jpg';
 import * as greeLogo from '../img/logos/gree.png';
 import * as kentatsuLogo from '../img/logos/kentatsu.png';
 import * as mitsubishiLogo from '../img/logos/mitsubishi.png';
@@ -10,7 +12,7 @@ const INITIAL_STATE: ChpState = {
     images: [
         {
             right: true,
-            src: airConditioningImg,
+            src: img1,
             text: `
             Насладись Приятной Прохладой в Течение Жаркого Лета!
             `,
@@ -18,7 +20,7 @@ const INITIAL_STATE: ChpState = {
         {
             class: 'chp-image-mountain',
             right: false,
-            src: airConditioningImg,
+            src: img2,
             text: `
             Почувствуй Преимущество Комфортной Температуры в Вашем Доме!
             `,
@@ -26,7 +28,7 @@ const INITIAL_STATE: ChpState = {
         {
             class: 'chp-image-maintenance',
             right: true,
-            src: airConditioningImg,
+            src: img3,
             text: `
             Качественные Решения Вопросов Кондиционирования Воздуха
             `,
