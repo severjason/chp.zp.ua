@@ -36,7 +36,6 @@
     .chp-image-text {
       color: $chp-white-color;
       text-align: left;
-      word-break: break-word;
 
       h4 {
         font-size: 4rem;
@@ -103,6 +102,10 @@
   .chp-image-divider-container {
 
     .ui.grid.chp-image-divider {
+
+      .chp-image-text {
+        word-break: break-word;
+      }
 
       .chp-image-text h4 {
         font-size: 2.5rem;

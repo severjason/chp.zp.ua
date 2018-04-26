@@ -73,10 +73,8 @@
     width: 0; } }
 
 @media all and (max-width: 600px) {
-  .chp-header-wrapper .ui.container {
-    margin: 0 !important; }
-    .chp-header-wrapper .ui.container .row > .four.column {
-      text-align: center; }
+  .chp-header-wrapper .ui.container .row > .four.column {
+    text-align: center; }
   .chp-header-wrapper .chp-header-text .chp-icon {
     font-size: 4rem;
     height: 4rem;
