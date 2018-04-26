@@ -3,12 +3,11 @@ import { connect } from 'react-redux';
 import 'semantic-ui-css/semantic.min.css';
 import {  Footer, Header, ImageDivider, Partners, Services } from '../../components';
 import { ChpState } from '../../interfaces';
-import './index.css';
 
 class App extends React.Component<ChpState> {
     public render() {
         return (
-            <div className="app-wrapper">
+            <div>
                 <Header {...this.props}/>
                 <Services {...this.props.services}/>
                 <ImageDivider {...this.props.images[1]}/>
