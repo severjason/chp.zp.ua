@@ -1,9 +1,9 @@
-// sass-lint:disable force-element-nesting
-// sass-lint:disable no-important
-@import '../../scss/variables';
+import styled from 'styled-components';
+import * as bg1 from 'img/bg1.jpg';
 
+const HeaderStyle = styled.div`
 .chp-header-wrapper {
-  background: fixed $chp-default-bg-color url('../../img/bg1.jpg') top no-repeat;
+  background: fixed ${props => props.theme.defaultBgColor} url(${bg1}) top no-repeat;
   background-size: cover;
 
   .ui.grid {
@@ -14,18 +14,18 @@
 
   .chp-header {
     margin: 0;
-    min-height: $chp-container-min-height;
+    min-height: ${props => props.theme.containerMinHeight}rem;
   }
 
   .chp-header-text {
-    background-color: $chp-main-dark-color;
-    height: 2 * $chp-container-min-height / 3;
+    background-color: ${props => props.theme.mainDarkColor};
+    height: ${props => 2 * props.theme.containerMinHeight / 3}rem;
 
     &::before {
-      background-color: $chp-main-dark-color;
+      background-color: ${props => props.theme.mainDarkColor};
       bottom: 0;
       content: '';
-      height: 2 * $chp-container-min-height / 3;
+      height: ${props => 2 * props.theme.containerMinHeight / 3}rem;
       position: absolute;
       right: 0;
       top: 0;
@@ -33,42 +33,42 @@
     }
 
     .chp-icon {
-      color: $chp-main-light-color;
+      color: ${props => props.theme.mainLightColor};
       font-size: 5rem;
       height: 5rem;
       padding-top: 2rem;
     }
 
     .chp-text {
-      color: $chp-main-light-color;
+      color: ${props => props.theme.mainLightColor};
       font-size: 2rem;
 
       h1 {
-        color: $chp-white-color;
-        font-family: $chp-font-family;
+        color: ${props => props.theme.whiteColor};
+        font-family: ${props => props.theme.fontFamily};
         font-size: 3rem;
       }
 
       a {
-        color: $chp-main-light-color;
+        color: ${props => props.theme.mainLightColor};
         transition: color .5s;
 
         &:hover {
-          color: $chp-white-color;
+          color: ${props => props.theme.whiteColor};
         }
       }
     }
   }
 
   .chp-header-phone {
-    background-color: $chp-main-light-color;
-    height: $chp-container-min-height / 3;
+    background-color: ${props => props.theme.mainLightColor};
+    height: ${props => props.theme.containerMinHeight / 3}rem;
 
     &::before {
-      background-color: $chp-main-light-color;
+      background-color: ${props => props.theme.mainLightColor};
       bottom: 0;
       content: '';
-      height: $chp-container-min-height / 3;
+      height: ${props => props.theme.containerMinHeight / 3}rem;
       left: 0;
       position: absolute;
       top: 0;
@@ -76,7 +76,7 @@
     }
 
     .chp-icon {
-      color: $chp-white-color;
+      color: ${props => props.theme.whiteColor};
       font-size: 3.5rem;
       height: 3.5rem;
       padding-top: 3rem;
@@ -108,7 +108,7 @@
     }
 
     .chp-header-text {
-      height: $chp-container-min-height / 3;
+      height: ${props => props.theme.containerMinHeight / 3}rem;
 
       &::before {
         width: 0;
@@ -171,3 +171,8 @@
     }
   }
 }
+
+
+`;
+
+export default HeaderStyle;

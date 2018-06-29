@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { ChpPartner } from '../../interfaces';
-import './index.css';
+import { ChpPartner } from 'interfaces';
+import PartnersStyle from './style';
 
 interface ChpPartners {
     partners: ChpPartner[];
@@ -24,15 +24,17 @@ const Partners: React.StatelessComponent<ChpPartners> = (props: ChpPartners) => 
         );
     });
     return (
-        <div className="chp-partners-wrapper">
-            <div className="ui container chp-partners-container">
-                <div className="ui middle aligned equal width grid">
-                    <div className="row">
-                        {partners}
+        <PartnersStyle>
+            <div className="chp-partners-wrapper">
+                <div className="ui container chp-partners-container">
+                    <div className="ui middle aligned equal width grid">
+                        <div className="row">
+                            {partners}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </PartnersStyle>
     );
 };
 

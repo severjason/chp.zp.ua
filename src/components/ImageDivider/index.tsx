@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { ChpImage } from '../../interfaces';
-import './index.css';
+import { ChpImage } from 'interfaces';
+import ImageDividerStyle from './style';
 
 const ImageDivider: React.StatelessComponent<ChpImage> = (props: ChpImage) => {
     const image: ReactNode = (
@@ -15,21 +15,22 @@ const ImageDivider: React.StatelessComponent<ChpImage> = (props: ChpImage) => {
         </div>
     );
     return (
-        <div className={`chp-image-divider-wrapper ${props.class ? props.class : ''}`}>
-            <div className="ui container chp-image-divider-container">
-                <div
-                    className={`ui top aligned two column centered grid chp-image-divider
+        <ImageDividerStyle>
+            <div className={`chp-image-divider-wrapper ${props.class ? props.class : ''}`}>
+                <div className="ui container chp-image-divider-container">
+                    <div
+                        className={`ui top aligned two column centered grid chp-image-divider
                     ${props.right ? 'right' : ''}`}>
-                    <div className="sixteen wide mobile eight wide computer column ">
-                        {props.right ? image : text}
-                    </div>
-                    <div className="sixteen wide mobile eight wide computer column ">
-                        {props.right ? text : image}
+                        <div className="sixteen wide mobile eight wide computer column ">
+                            {props.right ? image : text}
+                        </div>
+                        <div className="sixteen wide mobile eight wide computer column ">
+                            {props.right ? text : image}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        </ImageDividerStyle>
     );
 };
 

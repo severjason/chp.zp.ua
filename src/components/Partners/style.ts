@@ -1,13 +1,13 @@
-// sass-lint:disable force-element-nesting
-@import '../../scss/variables';
+import styled from 'styled-components';
 
+const PartnersStyle = styled.div`
 .chp-partners-wrapper {
-  background: $chp-white-color;
-  padding: $chp-image-margin 0;
+  background: ${props => props.theme.whiteColor};
+  padding: ${props => props.theme.imgMargin}rem 0;
 
   .ui.container.chp-partners-container {
     .column img {
-      max-width: 21.4rem;
+      // max-width: 21.4rem;
       padding: 1rem;
     }
   }
@@ -41,3 +41,7 @@
   }
 
 }
+
+`;
+
+export default PartnersStyle;

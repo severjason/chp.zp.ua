@@ -1,9 +1,8 @@
-// sass-lint:disable force-element-nesting
-// sass-lint:disable no-important
-@import '../../scss/variables';
+import styled from 'styled-components';
 
+const FooterStyle = styled.div`
 .chp-footer-wrapper {
-  background-color: $chp-white-color;
+  background-color: ${props => props.theme.whiteColor};
   // height: $chp-container-min-height;
 
   .ui.grid {
@@ -13,16 +12,16 @@
   }
 
   .ui.grid.chp-footer-phone {
-    background-color: $chp-main-light-color;
-    height: $chp-container-min-height / 3;
-    margin-top: $chp-container-min-height / 3;
+    background-color: ${props => props.theme.mainLightColor};
+    height: ${props => props.theme.containerMinHeight / 3}rem;
+    margin-top: ${props => props.theme.containerMinHeight / 3}rem;
 
     &::before {
-      background-color: $chp-main-light-color;
+      background-color: ${props => props.theme.mainLightColor};
       bottom: 0;
       content: '';
-      height: $chp-container-min-height / 3;
-      margin-top: $chp-container-min-height / 3;
+      height: ${props => props.theme.containerMinHeight / 3}rem;
+      margin-top: ${props => props.theme.containerMinHeight / 3}rem;
       position: absolute;
       right: 0;
       top: 0;
@@ -30,7 +29,7 @@
     }
 
     .chp-icon {
-      color: $chp-white-color;
+      color: ${props => props.theme.whiteColor};
       font-size: 3.5rem;
       height: 3.5rem;
       padding-top: 3rem;
@@ -48,15 +47,15 @@
   }
 
   .ui.grid.chp-footer-mail {
-    background-color: $chp-main-dark-color;
-    color: $chp-white-color;
-    height: 2 * $chp-container-min-height / 3;
+    background-color: ${props => props.theme.mainDarkColor};
+    color: ${props => props.theme.whiteColor};
+    height: ${props => 2 * props.theme.containerMinHeight / 3}rem;
 
     &::before {
-      background-color: $chp-main-dark-color;
+      background-color: ${props => props.theme.mainDarkColor};
       bottom: 0;
       content: '';
-      height: 2 * $chp-container-min-height / 3;
+      height: ${props => 2 * props.theme.containerMinHeight / 3}rem;
       left: 0;
       position: absolute;
       top: 0;
@@ -80,11 +79,11 @@
     }
 
     a {
-      color: $chp-white-color;
+      color: ${props => props.theme.whiteColor};
       transition: color .5s;
 
       &:hover {
-        color: $chp-main-light-color;
+        color: ${props => props.theme.mainLightColor};
       }
     }
   }
@@ -111,7 +110,7 @@
     }
 
     .ui.grid.chp-footer-mail {
-      height: $chp-container-min-height / 3;
+      height: ${props => props.theme.containerMinHeight / 3}rem;
 
       &::before {
         width: 0;
@@ -172,3 +171,6 @@
     }
   }
 }
+`;
+
+export default FooterStyle;

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import 'semantic-ui-css/semantic.min.css';
-import {  Footer, Header, ImageDivider, Partners, Services } from '../../components';
-import { ChpState } from '../../interfaces';
+import {  Footer, Header, ImageDivider, Partners, Services } from 'components';
+import { ChpState } from 'interfaces';
 
 class App extends React.Component<ChpState> {
     public render() {

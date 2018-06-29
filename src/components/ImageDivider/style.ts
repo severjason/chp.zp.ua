@@ -1,15 +1,17 @@
-// sass-lint:disable force-element-nesting
-@import '../../scss/variables';
+import styled from 'styled-components';
+import * as bg2 from 'img/bg2.jpg';
+import * as bg3 from 'img/bg3.jpg';
 
+const ImageDividerStyle = styled.div`
 .chp-image-divider-wrapper {
 
   &.chp-image-mountain {
-    background: fixed $chp-default-bg-color url('../../img/bg2.jpg') top no-repeat;
+    background: fixed ${props => props.theme.defaultBgColor} url(${bg2}) top no-repeat;
     background-size: cover;
   }
 
   &.chp-image-maintenance {
-    background: fixed $chp-default-bg-color url('../../img/bg3.jpg') top no-repeat;
+    background: fixed ${props => props.theme.defaultBgColor} url(${bg3}) top no-repeat;
     background-size: cover;
   }
 }
@@ -18,28 +20,29 @@
 
   .ui.grid.chp-image-divider {
     margin: 0;
-    min-height: $chp-img-height;
+    min-height: ${props => props.theme.imgHeight}rem;
 
     .column {
       padding: 0;
     }
 
     img {
-      box-shadow: $chp-image-box-shadow;
+      box-shadow: ${props => props.theme.imgBoxShadow};
       display: block;
       height: auto;
-      margin: $chp-image-margin / 2 auto;
+      margin: ${props => props.theme.imgMargin / 2}rem auto;
       position: relative;
       width: 80%;
     }
 
     .chp-image-text {
-      color: $chp-white-color;
+      color: ${props => props.theme.whiteColor};
       text-align: left;
 
       h4 {
+        font-family: ${props => props.theme.fontFamily};
         font-size: 4rem;
-        margin-top: $chp-image-margin / 2;
+        margin-top: ${props => props.theme.imgMargin / 2}rem;
       }
     }
   }
@@ -49,10 +52,10 @@
   .chp-image-divider-container .ui.grid.chp-image-divider {
 
     .chp-image-text {
-      padding-right: 3 * $chp-image-margin / 2;
+      padding-right: ${props => 3 * props.theme.imgMargin / 2}rem;
 
       &::before {
-        border-top: 3px solid $chp-main-light-color;
+        border-top: 3px solid ${props => props.theme.mainLightColor};
         bottom: -5%;
         content: '';
         left: 80%;
@@ -64,15 +67,15 @@
     }
 
     img {
-      height: $chp-img-height;
-      margin-top: $chp-image-margin / 2;
+      height: ${props => props.theme.imgHeight}rem;
+      margin-top: ${props => props.theme.imgMargin / 2}rem;
       position: absolute;
-      width: $chp-img-width;
+      width: ${props => props.theme.imgWidth}rem;
     }
 
     &.right {
       .chp-image-text {
-        padding-left: 3 * $chp-image-margin / 2;
+        padding-left: ${props => 3 * props.theme.imgMargin / 2}rem;
 
         &::before {
           left: -50%;
@@ -113,3 +116,8 @@
     }
   }
 }
+
+
+`;
+
+export default ImageDividerStyle;
