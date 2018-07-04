@@ -2,6 +2,7 @@ export interface ChpImage {
     class?: string;
     right: boolean;
     src: string;
+    desc: string;
     text: string;
 }
 

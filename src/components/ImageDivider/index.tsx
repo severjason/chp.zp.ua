@@ -5,7 +5,10 @@ import ImageDividerStyle from './style';
 
 const ImageDivider: React.StatelessComponent<ChpImage> = (props: ChpImage) => {
     const image: ReactNode = (
-        <img src={props.src}/>
+        <img
+            src={props.src}
+            alt={props.desc}
+        />
     );
     const text: ReactNode = (
         <div className="chp-image-text">

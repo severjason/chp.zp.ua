@@ -13,6 +13,7 @@ const INITIAL_STATE: ChpState = {
         {
             right: true,
             src: img1,
+            desc: 'air conditioner chp.zp.ua',
             text: `
             Насладись Приятной Прохладой в Течение Жаркого Лета!
             `,
@@ -21,6 +22,7 @@ const INITIAL_STATE: ChpState = {
             class: 'chp-image-mountain',
             right: false,
             src: img2,
+            desc: 'air conditioner in bedroom chp.zp.ua',
             text: `
             Почувствуй Преимущество Комфортной Температуры в Вашем Доме!
             `,
@@ -29,6 +31,7 @@ const INITIAL_STATE: ChpState = {
             class: 'chp-image-maintenance',
             right: true,
             src: img3,
+            desc: 'air conditioner with remote control chp.zp.ua',
             text: `
             Качественные Решения Вопросов Кондиционирования Воздуха
             `,
