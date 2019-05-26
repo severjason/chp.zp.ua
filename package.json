@@ -20,7 +20,8 @@
     "react-scripts": "^3.0.1",
     "redux": "^4.0.1",
     "semantic-ui-css": "^2.4.1",
-    "styled-components": "^3.4.10"
+    "styled-components": "^3.4.10",
+    "typescript": "^3.4.5"
   },
   "jest": {
     "snapshotSerializers": [
@@ -45,8 +46,7 @@
     "identity-obj-proxy": "^3.0.0",
     "react-test-renderer": "^16.8.6",
     "tslint": "^5.16.0",
-    "tslint-react": "^4.0.0",
-    "typescript": "^3.4.5"
+    "tslint-react": "^4.0.0"
   },
   "browserslist": [
     ">0.2%",
