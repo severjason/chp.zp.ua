@@ -4,7 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 import {  Footer, Header, ImageDivider, Partners, Services } from 'components';
 import { ChpState } from 'interfaces';
 
-export const App: React.StatelessComponent<ChpState> = (props) => (
+export const App: React.FC<ChpState> = (props) => (
     <div>
         <Header {...props}/>
         <Services {...props.services}/>
@@ -16,7 +16,4 @@ export const App: React.StatelessComponent<ChpState> = (props) => (
     </div>
 );
 
-export default connect<ChpState, any>(
-    (state: ChpState) => state,
-    null
-)(App);
+export default connect<ChpState, {}, {}, ChpState>((state: ChpState) => state)(App);
