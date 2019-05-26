@@ -37,7 +37,7 @@ const Footer: React.StatelessComponent = () => {
                                     <div className="sixteen wide column chp-copy">
                                         <a href="http://chp.zp.ua/">
                                             chp.zp.ua
-                                        </a> @ 2018
+                                        </a> @ 2019
                                     </div>
                                 </div>
                             </div>
