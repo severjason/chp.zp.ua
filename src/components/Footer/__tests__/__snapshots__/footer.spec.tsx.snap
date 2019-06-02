@@ -90,7 +90,8 @@ exports[`render a footer 1`] = `
                 >
                   chp.zp.ua
                 </a>
-                 @ 2019
+                 @ 
+                2019
               </div>
             </div>
           </div>
