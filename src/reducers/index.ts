@@ -9,72 +9,66 @@ import * as sakataLogo from '../img/logos/sakata.jpg';
 import { ChpState } from '../interfaces';
 
 const INITIAL_STATE: ChpState = {
-    images: [
-        {
-            right: true,
-            src: img1,
-            desc: 'air conditioner chp.zp.ua',
-            text: `
-            Насладись Приятной Прохладой в Течение Жаркого Лета!
-            `,
-        },
-        {
-            class: 'chp-image-mountain',
-            right: false,
-            src: img2,
-            desc: 'air conditioner in bedroom chp.zp.ua',
-            text: `
-            Почувствуй Преимущество Комфортной Температуры в Вашем Доме!
-            `,
-        },
-        {
-            class: 'chp-image-maintenance',
-            right: true,
-            src: img3,
-            desc: 'air conditioner with remote control chp.zp.ua',
-            text: `
-            Качественные Решения Вопросов Кондиционирования Воздуха
-            `,
-        },
-    ],
-    services: {
-        title: 'Услуги',
-        texts: [
-            'Монтаж, обслуживание и ремонт кондиционеров, ' +
-            'систем кондиционирования и вентиляции (в том числе чистка наружных и внутренних блоков, ' +
-            'дозаправка фреоном и т.п.)',
-            'Проектирование систем кондиционирования и вентиляции',
-            'Ремонт холодильного и торгово-технического оборудования',
-        ]
+  images: [
+    {
+      right: true,
+      src: img1,
+      desc: 'air conditioner chp.zp.ua',
+      text: `Насладись Приятной Прохладой в Течение Жаркого Лета!`,
     },
-    goods: {
-        title: 'Товары',
-        texts: [
-            'Бытовые кондиционеры Mitsubishi Electric, Gree, Kentatsu, Sakata',
-            'Системы кондиционирования и вентиляции Mitsubishi Electric, Gree, Kentatsu, Sakata',
-            'Холодильные и морозильные камеры "под ключ" (до 300 куб.м.);',
-        ]
+    {
+      imageClass: 'chp-image-mountain',
+      right: false,
+      src: img2,
+      desc: 'air conditioner in bedroom chp.zp.ua',
+      text: `Почувствуй Преимущество Комфортной Температуры в Вашем Доме!`,
     },
-    partners: [
-        {
-            title: 'Gree',
-            logo: greeLogo,
-        },
-        {
-            title: 'Kentatsu',
-            logo: kentatsuLogo,
-        },
-        {
-            title: 'Mitsubishi Electric',
-            logo: mitsubishiLogo,
-        },
-        {
-            title: 'Sakata',
-            logo: sakataLogo,
-        },
+    {
+      imageClass: 'chp-image-maintenance',
+      right: true,
+      src: img3,
+      desc: 'air conditioner with remote control chp.zp.ua',
+      text: `Качественные Решения Вопросов Кондиционирования Воздуха`,
+    },
+  ],
+  services: {
+    title: 'Услуги',
+    texts: [
+      'Монтаж, обслуживание и ремонт кондиционеров, ' +
+      'систем кондиционирования и вентиляции (в том числе чистка наружных и внутренних блоков, ' +
+      'дозаправка фреоном и т.п.)',
+      'Проектирование систем кондиционирования и вентиляции',
+      'Ремонт холодильного и торгово-технического оборудования',
     ]
+  },
+  goods: {
+    title: 'Товары',
+    texts: [
+      'Бытовые кондиционеры Mitsubishi Electric, Gree, Kentatsu, Sakata',
+      'Системы кондиционирования и вентиляции Mitsubishi Electric, Gree, Kentatsu, Sakata',
+      'Холодильные и морозильные камеры "под ключ" (до 300 куб.м.);',
+    ]
+  },
+  partners: [
+    {
+      title: 'Gree',
+      logo: greeLogo,
+    },
+    {
+      title: 'Kentatsu',
+      logo: kentatsuLogo,
+    },
+    {
+      title: 'Mitsubishi Electric',
+      logo: mitsubishiLogo,
+    },
+    {
+      title: 'Sakata',
+      logo: sakataLogo,
+    },
+  ]
 };
 
 export default function rootReducer(state: ChpState = INITIAL_STATE) {
-    return state;
+  return state;
 }

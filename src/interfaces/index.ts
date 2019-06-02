@@ -1,5 +1,5 @@
 export interface ChpImage {
-    class?: string;
+    imageClass?: string;
     right: boolean;
     src: any;
     desc: string;
