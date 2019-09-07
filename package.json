@@ -7,20 +7,17 @@
     "url": "https://github.com/severjason/chp.zp.ua"
   },
   "dependencies": {
-    "@types/node": "^10.14.7",
-    "@types/react": "^16.8.18",
-    "@types/react-dom": "^16.8.4",
-    "@types/react-redux": "^6.0.14",
-    "@types/react-router-dom": "^4.3.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^5.1.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.1",
-    "redux": "^4.0.1",
+    "@types/node": "^12.7.4",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^4.3.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1",
     "semantic-ui-css": "^2.4.1",
     "styled-components": "^3.4.10",
-    "typescript": "^3.4.5"
+    "typescript": "^3.6.2"
   },
   "jest": {
     "snapshotSerializers": [
@@ -36,15 +33,15 @@
     "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.9.3",
+    "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^23.3.14",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.1",
-    "enzyme-to-json": "^3.3.5",
+    "@types/jest": "^24.0.18",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
     "identity-obj-proxy": "^3.0.0",
-    "react-test-renderer": "^16.8.6",
-    "tslint": "^5.16.0",
+    "react-test-renderer": "^16.9.0",
+    "tslint": "^5.19.0",
     "tslint-react": "^4.0.0"
   },
   "browserslist": [

@@ -8,7 +8,7 @@ import * as sakataLogo from '../img/logos/sakata.jpg';
 
 import { ChpState } from '../interfaces';
 
-const INITIAL_STATE: ChpState = {
+const data: ChpState = {
   images: [
     {
       right: true,
@@ -69,6 +69,4 @@ const INITIAL_STATE: ChpState = {
   ]
 };
 
-export default function rootReducer(state: ChpState = INITIAL_STATE) {
-  return state;
-}
+export default data;
