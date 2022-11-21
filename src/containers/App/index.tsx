@@ -1,7 +1,7 @@
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import { Footer, Header, ImageDivider, Partners, Services } from 'components';
-import data from '../../data';
+import data from 'data';
 
 export const App = () => {
   const {images, goods, partners, services} = data;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactNode } from 'react';
-import { ChpServicesAndGoods } from '../../interfaces';
-import './index.css';
+import { ChpServicesAndGoods } from 'interfaces';
+import ServicesStyle from './style';
 
 const Services: React.FC<ChpServicesAndGoods> = ({texts, title}) => {
 
@@ -20,14 +20,16 @@ const Services: React.FC<ChpServicesAndGoods> = ({texts, title}) => {
   });
 
   return (
-    <div className="chp-services-wrapper">
-      <div className="ui container chp-services-container">
-        <h3>{title}</h3>
-        <div className="ui three column grid">
-          {services}
+    <ServicesStyle>
+      <div className="chp-services-wrapper">
+        <div className="ui container chp-services-container">
+          <h3>{title}</h3>
+          <div className="ui three column grid">
+            {services}
+          </div>
         </div>
       </div>
-    </div>
+    </ServicesStyle>
   );
 };
 

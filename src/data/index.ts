@@ -1,12 +1,12 @@
-import * as img1 from '../img/img1.jpg';
-import * as img2 from '../img/img2.jpg';
-import * as img3 from '../img/img3.jpg';
-import * as greeLogo from '../img/logos/gree.png';
-import * as kentatsuLogo from '../img/logos/kentatsu.png';
-import * as mitsubishiLogo from '../img/logos/mitsubishi.png';
-import * as sakataLogo from '../img/logos/sakata.jpg';
+import img1 from 'img/img1.jpg';
+import img2 from 'img/img2.jpg';
+import img3 from 'img/img3.jpg';
+import greeLogo from 'img/logos/gree.png';
+import kentatsuLogo from 'img/logos/kentatsu.png';
+import mitsubishiLogo from 'img/logos/mitsubishi.png';
+import sakataLogo from 'img/logos/sakata.jpg';
 
-import { ChpState } from '../interfaces';
+import { ChpState } from 'interfaces';
 
 const data: ChpState = {
   images: [
@@ -14,39 +14,39 @@ const data: ChpState = {
       right: true,
       src: img1,
       desc: 'air conditioner chp.zp.ua',
-      text: `Насладись Приятной Прохладой в Течение Жаркого Лета!`,
+      text: `Насолоджуйся Приємною Прохолодою Спекотним Літом!`,
     },
     {
       imageClass: 'chp-image-mountain',
       right: false,
       src: img2,
       desc: 'air conditioner in bedroom chp.zp.ua',
-      text: `Почувствуй Преимущество Комфортной Температуры в Вашем Доме!`,
+      text: `Відчуй Перевагу Комфортної Температури у Вашому Домі!`,
     },
     {
       imageClass: 'chp-image-maintenance',
       right: true,
       src: img3,
       desc: 'air conditioner with remote control chp.zp.ua',
-      text: `Качественные Решения Вопросов Кондиционирования Воздуха`,
+      text: `Якісні Рішення Питань Кондиціонування Повітря`,
     },
   ],
   services: {
-    title: 'Услуги',
+    title: 'Послуги',
     texts: [
-      'Монтаж, обслуживание и ремонт кондиционеров, ' +
-      'систем кондиционирования и вентиляции (в том числе чистка наружных и внутренних блоков, ' +
-      'дозаправка фреоном и т.п.)',
-      'Проектирование систем кондиционирования и вентиляции',
-      'Ремонт холодильного и торгово-технического оборудования',
+      'Монтаж, обслуговування та ремонт кондиціонерів, ' +
+      'систем кондиціонування і вентиляції (зокрема чищення зовнішніх і внутрішніх блоків, ' +
+      'дозаправка фреоном тощо).',
+      'Проектування систем кондиціонування та вентиляції',
+      'Ремонт холодильного та торгово-технічного обладнання',
     ]
   },
   goods: {
-    title: 'Товары',
+    title: 'Товари',
     texts: [
-      'Бытовые кондиционеры Mitsubishi Electric, Gree, Kentatsu, Sakata',
-      'Системы кондиционирования и вентиляции Mitsubishi Electric, Gree, Kentatsu, Sakata',
-      'Холодильные и морозильные камеры "под ключ" (до 300 куб.м.);',
+      'Побутові кондиціонери Mitsubishi Electric, Gree, Kentatsu, Sakata',
+      'Системи кондиціонування та вентиляції Mitsubishi Electric, Gree, Kentatsu, Sakata',
+      'Холодильні та морозильні камери "під ключ" (до 300 куб.м.);',
     ]
   },
   partners: [

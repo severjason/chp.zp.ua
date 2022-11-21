@@ -7,18 +7,17 @@
     "url": "https://github.com/severjason/chp.zp.ua"
   },
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.1.1",
-    "semantic-ui-css": "^2.4.1",
-    "styled-components": "^3.4.10",
-    "typescript": "^3.6.2"
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1",
+    "semantic-ui-css": "^2.5.0",
+    "styled-components": "^5.3.6"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,21 +28,15 @@
     "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.10.3",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.4",
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-router-dom": "^4.3.5",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.4.0",
-    "firebase-tools": "^7.3.1",
-    "identity-obj-proxy": "^3.0.0",
-    "react-test-renderer": "^16.9.0",
-    "tslint": "^5.19.0",
-    "tslint-react": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.11",
+    "firebase-tools": "^7.16.2",
+    "typescript": "^4.9.3"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "browserslist": [
     ">0.2%",

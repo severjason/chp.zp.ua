@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as bg1 from 'img/bg1.jpg';
+import bg1 from 'img/bg1.jpg';
 
 const HeaderStyle = styled.div`
 .chp-header-wrapper {

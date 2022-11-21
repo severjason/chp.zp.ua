@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterStyle from './style';
+import config from "config";
 
 const Footer: React.FC = () => (
   <FooterStyle>
@@ -13,9 +14,9 @@ const Footer: React.FC = () => (
                   <i className="chp-icon phone icon"/>
                 </div>
                 <div className="left aligned twelve wide column">
-                  <div className="chp-text">Позвоните нам:</div>
-                  <a href="tel:+380504864980" className="chp-phone">+38 (050) 486-49-80</a><br/>
-                  <a href="tel:+380637862478" className="chp-phone">+38 (063) 786-24-78</a>
+                  <div className="chp-text">Подзвоніть нам:</div>
+                  <a href={`tel:${config.phone1.value}`} className="chp-phone">{config.phone1.formatted}</a><br/>
+                  <a href={`tel:${config.phone2.value}`} className="chp-phone">{config.phone2.formatted}</a>
                 </div>
               </div>
             </div>
@@ -27,15 +28,15 @@ const Footer: React.FC = () => (
                   <i className="chp-icon envelope outline icon"/>
                 </div>
                 <div className="left aligned twelve wide column">
-                  <a href="mailto:yraseverinov@gmail.com" className="chp-mail">
-                    yraseverinov@gmail.com
+                  <a href={`mailto:${config.email}`} className="chp-mail">
+                    {config.email}
                   </a>
                 </div>
               </div>
               <div className="row">
                 <div className="sixteen wide column chp-copy">
-                  <a href="http://chp.zp.ua/">
-                    chp.zp.ua
+                  <a href={config.url}>
+                    {config.website}
                   </a> @ {new Date().getFullYear()}
                 </div>
               </div>

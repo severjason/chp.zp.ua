@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import * as bg2 from 'img/bg2.jpg';
-import * as bg3 from 'img/bg3.jpg';
+import bg2 from 'img/bg2.jpg';
+import bg3 from 'img/bg3.jpg';
 
 const ImageDividerStyle = styled.div`
 .chp-image-divider-wrapper {

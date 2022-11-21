@@ -1,8 +1,7 @@
-// tslint:disable no-unused-expression
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
-injectGlobal`
+createGlobalStyle`
 body {
   font-size: 14px;
   height: 100%;

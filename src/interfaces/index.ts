@@ -1,7 +1,7 @@
 export interface ChpImage {
     imageClass?: string;
     right: boolean;
-    src: any;
+    src: string;
     desc: string;
     text: string;
 }
@@ -13,7 +13,7 @@ export interface ChpServicesAndGoods {
 
 export interface ChpPartner {
     title: string;
-    logo: any;
+    logo: string;
 }
 
 export interface ChpState {

@@ -11,7 +11,7 @@ version: 2
 jobs:
   build-and-deploy:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:18
 
     working_directory: ~/chp
 
@@ -26,20 +26,16 @@ jobs:
 
       - run:
           name: Setup Dependencies
-          command: npm install
+          command: yarn
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: # run tests
-          name: Run Test and Coverage
-          command: npm run test
-
       - run:
           name: Build Project
-          command: npm run build
+          command: yarn build
 
       - run:
           name: Deploy Master to Firebase
